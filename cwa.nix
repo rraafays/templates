@@ -2,9 +2,7 @@
 
 pkgs.mkShell {
   nativeBuildInputs = with pkgs.buildPackages; [
-    cargo
-    rustc
-    rust-analyzer
-    rustfmt
+    nodePackages.pnpm
+    nodejs
   ];
 }
